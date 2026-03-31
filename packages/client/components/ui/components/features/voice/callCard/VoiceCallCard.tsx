@@ -115,8 +115,6 @@ export function VoiceCallCardContext(props: { children: JSX.Element }) {
   const channel = createMemo(() => {
     const inf = info();
 
-    console.log("SET INFO", inf);
-
     if (!ref!) return;
     const sty = ref.style;
     //For #835 to adapt VoiceCallCard to mobile UI
